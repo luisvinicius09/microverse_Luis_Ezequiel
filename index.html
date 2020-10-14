@@ -12,9 +12,32 @@
       <h1 id="title">freecodecamp Survey Form</h1>
       <p id="description">Thank you for taking the time to help us improve the platform</p>
       <form id="survey-form">
-        <input id="name" required>
-        <input id="email" type="email" required>
-        <input id="number" type="number" min=18 max=70>
+        <label id="name-label">Name</label>
+        <input id="name" placeholder="Enter your name" required>
+
+        <label id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+
+        <label id="number-label">Age</label>
+        <input id="number" type="number" placeholder="Age" min=18 max=70>
+        
+        <input type="radio" name="user-recomend" value="Definitely">Definitely
+        <input type="radio" name="user-recomend" value="Maybe">Maybe
+        <input type="radio" name="user-recomend" value="Not Sure">Not Sure
+
+        <select id="dropdown">
+          <option>Challenges</option>
+          <option>Projects</option>
+        </select>
+
+        <input type="checkbox" value="Front-end Projects">Front-end Projects
+        <input type="checkbox" value="Back-end Projects">Back-end Projects
+
+        <label>Additional comments</label>
+        <textarea></textarea>          
+
+        <input type="submit" id="submit">
+        
       </form>
 
     <script  src="js/index.js"></script>
